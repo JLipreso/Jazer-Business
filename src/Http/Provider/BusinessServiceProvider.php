@@ -16,8 +16,8 @@ class BusinessServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__ . '/../../../config/config.php' => config_path('businessconfig.php')
-        ], 'businessconfig-config');
+            __DIR__ . '/../../../config/config.php' => config_path('jazerbusinessconfig.php')
+        ], 'jazerbusinessconfig-config');
         
         $this->loadRoutesFrom( __DIR__ . '/../../../routes/api.php');
 
